@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nishchhal Verma</title>
+  <meta name="description" content="Postdoctoral Research Scientist in Physics at Columbia University. Research, publications, talks, and contact."/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>𝓝</text></svg>">
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#111827;
+      --muted:#9aa4b2;
+      --fg:#e5e7eb;
+      --accent:#60a5fa;
+      --accent-2:#a78bfa;
+      --maxw: 860px;
+      --radius: 16px;
+    }
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9; text-decoration:underline}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:24px}
+    header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(8px); background:linear-gradient(180deg, rgba(11,15,20,.85), rgba(11,15,20,.55) 60%, transparent); z-index:10;}
+    .nav{display:flex; gap:14px; align-items:center; padding:12px 0}
+    .nav .name{font-weight:700; letter-spacing:.2px}
+    .nav a{color:var(--muted); font-weight:600}
+    .nav a:hover{color:var(--fg)}
+    .hero{display:grid; grid-template-columns:120px 1fr; gap:20px; align-items:center; margin:28px 0 8px}
+    .avatar{width:120px; height:120px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-2)); display:grid; place-items:center; font-size:42px; font-weight:800}
+    h1{font-size:28px; margin:0}
+    .subtitle{color:var(--muted)}
+    .links{display:flex; flex-wrap:wrap; gap:14px; margin-top:10px}
+    .chip{display:inline-flex; gap:8px; align-items:center; padding:8px 12px; background:color-mix(in oklab, var(--card) 92%, white 8%); border:1px solid rgba(255,255,255,.06); border-radius:999px}
+    main{display:grid; gap:18px; margin-top:14px}
+    section{background:linear-gradient(180deg, color-mix(in oklab, var(--card) 94%, white 6%), var(--card)); border:1px solid rgba(255,255,255,.06); padding:18px; border-radius:var(--radius)}
+    section h2{margin:4px 0 8px; font-size:20px}
+    ul{margin:0; padding-left:18px}
+    li{margin:6px 0}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    .pubs li{margin:10px 0}
+    .small{font-size:.95rem}
+    .muted{color:var(--muted)}
+    footer{margin:18px 0 32px; color:var(--muted); font-size:.9rem}
+    .pill{font-weight:700; padding:2px 8px; border-radius:999px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08)}
+    @media (max-width:720px){
+      .hero{grid-template-columns:1fr; text-align:left}
+      .avatar{width:84px; height:84px; font-size:28px}
+      .grid-2{grid-template-columns:1fr}
+      header{position:static}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="name"><a href="#top" style="color:var(--fg)">Nishchhal Verma</a></div>
+      <div style="flex:1"></div>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#pubs">Publications</a>
+      <a href="#talks">Talks</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <a id="top"></a>
+  <div class="wrap">
+
+    <div class="hero">
+      <div class="avatar" aria-hidden="true">NV</div>
+      <div>
+        <h1>Nishchhal Verma</h1>
+        <div class="subtitle">Postdoctoral Research Scientist · Columbia University · Quantum Materials Theory</div>
+        <div class="links">
+          <a class="chip" href="mailto:nishchhal.verma@columbia.edu">Email</a>
+          <a class="chip" href="https://github.com/nishverma" target="_blank" rel="noopener">GitHub</a>
+          <a class="chip" href="https://www.linkedin.com/in/nishchhal-verma/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="chip" href="https://scholar.google.com/citations?user=qR_HAfMAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="chip" href="CV.pdf" target="_blank" rel="noopener">CV</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I study quantum geometry and many-body phenomena in moiré and 2D materials. My work bridges quantum geometry and correlated phenomena, with current interests in time-dependent quantum geometric tensors, entanglement, and excitonic instabilities in bilayer systems.
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research Highlights</h2>
+        <ul>
+          <li><strong>Local basis for topological bands.</strong> A framework to construct local basis states using wavefunctions of a topological band.</li>
+          <li><strong>Time-dependent QGT and linear response.</strong> A unified framework connecting quantum metric, Berry curvature, and optical properties.</li>
+          <li><strong>Quantum-geometric contributions to exciton stiffness.</strong> Demonstrating feasibility of interlayer condensation under realistic conditions.</li>
+        </ul>
+      </section>
+
+      <section id="pubs">
+        <h2>Publications</h2>
+        <ul class="pubs">
+          <li><strong>N. Verma</strong>, P. J. W. Moll, T. Holder, R. Queiroz, <em>Quantum Geometry: Revisiting electronic scales in quantum matter</em>, arXiv:2504.07173 (2025)</li>
+          <li><strong>N. Verma</strong>, R. Queiroz, <em>Local basis for interacting topological bands</em>, arXiv:2503.24344 (2025)</li>
+          <li><strong>N. Verma</strong>, R. Queiroz, <em>Instantaneous Response and Quantum Geometry of Insulators</em>, arXiv:2403.07052 (2024)</li>
+          <li>V. Crépel*, P. Ding*, <strong>N. Verma</strong>, N. Regnault, R. Queiroz, <em>Topologically Protected Flatness in Chiral Moiré Heterostructures</em>, <span class="muted">Phys. Rev. X 15, 021056 (2025)</span></li>
+          <li><strong>N. Verma</strong>, R. Queiroz, <em>Framework to Measure Quantum Metric from Step Response</em>, <span class="muted">Phys. Rev. Lett. 134, 106403 (2025)</span></li>
+          <li>M. Kreidel et al., <strong>N. Verma</strong>, <em>Measuring Kinetic Inductance and Superfluid Stiffness of Two-Dimensional Superconductors...</em>, <span class="muted">Phys. Rev. Research 6, 043245 (2024)</span></li>
+          <li><strong>N. Verma</strong>*, D. Guerci*, R. Queiroz, <em>Geometric Stiffness in Interlayer Exciton Condensates</em>, <span class="muted">Phys. Rev. Lett. 132, 236001 (2024)</span></li>
+          <li>T. Webb et al., <strong>N. Verma</strong>, <em>Tunable Magnetic Domains in Ferrimagnetic MnSb<sub>2</sub>Te<sub>4</sub></em>, <span class="muted">Nano Lett. 24(15), 4393–4399 (2024)</span></li>
+          <li><strong>N. Verma</strong>*, Z. Addison*, M. Randeria, <em>Unified Theory of the Anomalous and Topological Hall Effects with Phase‑Space Berry Curvatures</em>, <span class="muted">Sci. Adv. 8, eabq2765 (2022)</span></li>
+          <li>G. Wu et al., <strong>N. Verma</strong>, <em>Enhancing Perpendicular Magnetic Anisotropy in Garnet Ferrimagnet by Interfacing with Few‑Layer WTe<sub>2</sub></em>, <span class="muted">Nano Lett. 22(3), 1115–1121 (2022)</span></li>
+          <li><strong>N. Verma</strong>, T. Hazra, M. Randeria, <em>Optical Spectral Weight, Phase Stiffness, and T<sub>c</sub> Bounds for Trivial and Topological Flat Band Superconductors</em>, <span class="muted">PNAS 118(34), e2106744118 (2021)</span></li>
+          <li>R. Lyu*, Z. Tuchfeld*, <strong>N. Verma*</strong> et al., <em>Strange Metal Behavior of the Hall Angle in Twisted Bilayer Graphene</em>, <span class="muted">Phys. Rev. B 103, 245424 (2021)</span></li>
+          <li>T. Hazra, <strong>N. Verma</strong>, M. Randeria, <em>Bounds on the Superconducting Transition Temperature...</em>, <span class="muted">Phys. Rev. X 9, 031049 (2019)</span></li>
+          <li>S. Tlili et al., <strong>N. Verma</strong>, <em>Shaping the Zebrafish Myotome by Intertissue Friction and Active Stress</em>, <span class="muted">PNAS 116(51), 25430–25439 (2019)</span></li>
+          <li>Full list: <a href="https://scholar.google.com/citations?user=qR_HAfMAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+        </ul>
+      </section>
+
+      <section id="talks">
+        <h2>Invited Talks & Seminars</h2>
+        <ul>
+          <li>“Quantum geometry in Correlated systems” — FTPI Workshop on Quantum Matter, Minneapolis, <span class="muted">May 2025</span></li>
+          <li>“Time‑dependent Quantum geometry” — MPNYC Symposium, Flatiron Institute, <span class="muted">April 2025</span></li>
+          <li>“Quantum geometry: A new perspective on quantum materials” — APS Global Physics Summit, Anaheim, <span class="muted">March 2025</span></li>
+          <li>“Some rules on sum rules” — Workshop on moiré materials, KITP Santa Barbara, <span class="muted">Oct 2024</span></li>
+          <li>“Quantum metric and generalized sum rules” (Blackboard Talk) — Aspen Center for Physics, <span class="muted">June 2024</span></li>
+          <li>“Instantaneous response and quantum geometry of insulators” — CUNY Graduate Center Conference, NYC, <span class="muted">March 2024</span></li>
+          <li>Seminars: “Spectral Weight Bounds on Superconducting T_c” — IISER Bhopal, <span class="muted">Jan 2024</span>; “Unifying Anomalous and Topological Hall Effects” — SNB‑NCBS Kolkata, <span class="muted">Jan 2024</span>; “Upper Bounds on Superconducting T_c” — IISER Kolkata, <span class="muted">Mar 2022</span></li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:nishchhal.verma@columbia.edu">nishchhal.verma@columbia.edu</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="y"></span> Nishchhal Verma • Built with pure HTML/CSS • <a href="#top">Back to top</a></div>
+      <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+    </footer>
+  </div>
+</body>
+</html>
